@@ -6,16 +6,20 @@ import SectionTitle from "../components/ui/SectionTitle";
 function Projects() {
   const projects = [
     {
-      title: "Plateforme P2P",
-      stack: "Symfony • React • Docker",
+      title: "Moteur de recherche radio-dentaire",
+      stack: "PHP • Python • MariaDB",
       description:
-        "Développement d’une plateforme de partage de fichiers avec architecture backend Symfony et interface moderne.",
+        "Développement d’un moteur de recherche permettant l’indexation et la recherche optimisée de radios dentaires au sein d’un environnement médical.",
+      link: false,
+      url: "",
     },
     {
       title: "Sensibilisation Phishing",
       stack: "Symfony • PostgreSQL • Docker",
       description:
         "Application interne permettant la sensibilisation des collaborateurs aux risques de phishing.",
+      link: false,
+      url: "",
     },
   ];
 
@@ -47,10 +51,17 @@ function Projects() {
                   {project.description}
                 </p>
 
-                <button className="flex items-center gap-2 text-zinc-300 group-hover:text-blue-400 transition cursor-pointer">
-                  Voir le projet
-                  <FaArrowRight size={16} />
-                </button>
+                {project.link && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-zinc-300 group-hover:text-blue-400 transition cursor-pointer"
+                  >
+                    Voir le projet
+                    <FaArrowRight size={16} />
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>
