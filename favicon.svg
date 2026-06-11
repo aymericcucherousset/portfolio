@@ -1,0 +1,28 @@
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="128" height="128" rx="28" fill="#09090B"/>
+
+  <path
+    d="M64 26L96 102H82L74 82H54L46 102H32L64 26ZM58 70H70L64 54L58 70Z"
+    fill="url(#gradient)"
+  />
+
+  <defs>
+    <linearGradient
+      id="gradient"
+      x1="32"
+      y1="26"
+      x2="96"
+      y2="102"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>
